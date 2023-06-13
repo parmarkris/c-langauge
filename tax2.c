@@ -5,22 +5,21 @@ int main()
 
 	
 	int i;
-	 i = 10;
-	 
-	 
 	
 	
+	i =10;
 	
+	do{
 	
-	while ( i>=1)
-	
-	
-	
-	{
-		
-		printf("%d\n",i);
+	printf("%d\n",i);
 		
 		i--;
+	}
+	
+	while(i>=1);
+	{
+		
+	
 	}
 	
 	return 0;

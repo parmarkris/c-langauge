@@ -8,12 +8,16 @@ int main()
 	    
     printf("\n Enter The Number:");
     scanf("%d",&n);
+    do{
+    	
+    	f=f*i;
+        i++;
+	}
      
   
-    while(i<=n)
+    while(i<=n);
     {
-        f=f*i;
-        i++;
+        
     }
      
     printf("\n The Factorial of %d is %d",n,f);

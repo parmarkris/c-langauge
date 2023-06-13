@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main()
 {
@@ -15,18 +15,21 @@ int main()
 	scanf("%d",&n);
 
 	
-
-
-	
-	while(number<=n)
-	{
-		
-		if(number%2 == 1)
+    do{
+    	
+    		if(number%2 != 0)
 			printf("%d ",number);
 		
 		
 		number++;
 	}
 
+	
+	while(number<=n);
+	{
+		
+	
+	}
+
 	return 0;
-}
+}	

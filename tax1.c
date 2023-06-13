@@ -8,17 +8,20 @@ int main()
 	
 	
 	i =1;
+	do{
 	
 	
-	printf("Numbers from 1 to 10: \n");
 	
-	
-	while(i<=10)
+
+	printf("%d\n",i);
+
+     	i++;
+
+}
+	while(i<=10);
 	{
-		
-		printf("%d\n",i);
-		
-		i++;
+	
+	
 	}
 	
 	return 0;

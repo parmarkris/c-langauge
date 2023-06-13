@@ -9,14 +9,16 @@ int main()
     printf("Print all natural numbers from 1 to : ");
     scanf("%d", &i);
 
-    
-    
-    
-    
-    while(i>=b)
-    {
-        printf("%d\n", i);
+    do{
+    	printf("%d\n", i);
         i--;
+	}
+    
+    
+    
+    while(i>=b);
+    {
+        
     }
 
     return 0;

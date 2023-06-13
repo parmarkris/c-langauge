@@ -9,20 +9,22 @@ int main (){
 	number=2000;
 
 
-	
-
-	
-
-
-	
-	while(number<=n)
-	{
-		
+	do{
 		if(number%4 == 0)
 			printf("%d ",number);
 		
 		
 		number++;
+	}
+
+	
+
+
+	
+	while(number<=n);
+	{
+		
+		
 	}
 	
 	

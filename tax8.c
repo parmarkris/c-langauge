@@ -4,16 +4,19 @@ int main() {
 
     printf("Enter a positive integer: ");
     scanf("%d", &n);
-
-    while(i<=n)
-	 {
-        sum += i;
+    
+    do{
+    	sum += i;
         
         i++;
+	}
+
+    while(i<=n);
+	 {
+        
     }
     printf("Sum = %d", sum);
 
     
     return 0;
 }
-
