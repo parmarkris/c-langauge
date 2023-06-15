@@ -1,24 +1,17 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main()
-{ 
-
+int main(){
 	
-	int i;
-	
-	
-	
-	for( i =1 ;i<=10 ; i++){
-	
-	
-	
-
-	printf("%d\n",i);
-
-     	
-
-}
-	
+	int r,c,k;
+	for(r=5; r>=1 ; r--){
+	for(k=r;k<=4;k++){
+			printf(" ");
+		}
+		for(c=r; c>=1 ; c--){
+			printf("*");
+		}
+		printf("\n");
+	}
 	
 	return 0;
 }

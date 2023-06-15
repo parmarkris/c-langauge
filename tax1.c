@@ -1,28 +1,30 @@
-#include <stdio.h>
-
-int main()
-{ 
-
-	
-	int i;
-	
-	
-	i =1;
-	do{
-	
-	
-	
-
-	printf("%d\n",i);
-
-     	i++;
-
-}
-	while(i<=10);
-	{
-	
-	
+#include<stdio.h>    
+     
+int main()    
+{    
+    int n , i;
+    printf("Enter size of arry: ");
+    scanf("%d",&n);
+    
+    int a[n];
+	for(i=0 ; i<n ; i++) {
+		
+		printf("Enter elements of arry[%d] : ",i);
+		
+		scanf("%d",&a[i]);
 	}
-	
-	return 0;
-}
+		
+		for(i=0 ; i<n ; i++){
+			
+			
+			printf("%d",a[i]);
+		}
+		
+		
+	   
+    
+        
+    }      
+     
+        
+      

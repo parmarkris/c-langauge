@@ -1,25 +1,44 @@
-#include <stdio.h>
-
-int main()
-{
-    int i, b;
-
+#include<stdio.h>    
+     
+int main()    
+{    
+    int n , i;
+    printf("Enter size of arry: ");
+    scanf("%d",&n);
     
+    int a[n];
+    int b[n];
+    int sum[n];
     
-    printf("Print all natural numbers from 1 to : ");
-    scanf("%d", &i);
-
-    do{
-    	printf("%d\n", i);
-        i--;
+	for(i=0 ; i<n ; i++) {
+		
+		printf("Enter elements of arry[%d] : ",i);
+		
+		scanf("%d",&a[i]);
 	}
+		
+		
+		
+		
+		for(i=0 ; i<n ; i++) {
+		
+		printf("Enter elements of arry[%d] : ",i);
+		
+		scanf("%d",&b[i]);
+	}
+		for(i=0 ; i<n ; i++){
+		
+		
+		
+		sum[i] = a[i] + b[i];
+		printf("%d\n",sum[i]);
+	}
+		
+		
+		
+		
+		
+	   
     
-    
-    
-    while(i>=b);
-    {
         
-    }
-
-    return 0;
-}
+    }      
