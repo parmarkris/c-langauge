@@ -1,17 +1,50 @@
 #include<stdio.h>
 
 int main(){
-	
-	int r,c,k;
-	for(r=5 ; r>=1 ; r--){
-	for(k=r;k<=4;k++){
-			printf(" ");
-		}
-		for(c=1; c<=r ; c++){
-			printf("%d",c);
-		}
-		printf("\n");
-	}
+	 
+	 int n,m;
+	 printf("enter size of row:");
+	 scanf("%d",&m);
+ 	 printf("enter size of colum:");
+	 scanf("%d",&n);
+	 int i,j;
+	 int  a[m][n];
+	 for(i=0;i<m;i++){
+	 	for(j=0;j<n;j++){
+		 
+	 	 printf("enter value[%d][%d]:",i,j);
+	 	scanf("%d",&a[i][j]);
+	 	
+	 }
+}
+	 	 for(i=0;i<m;i++){
+	 	 	
+	 	 for(j=0;j<n;j++){
+	 	 printf("%d",a[i][j]);
+}
+      printf("\n");
+	 }
+
+       int sum=0;
+   
+     for (i = 0; i < m; i++) {
+             
+           for(j=0 ; j<n ; j++){
+		   
+             
+			 
+            if (i==j){
+			
+            sum += a[i][i];
+                    
+            
+        }
+}
+    }
+        printf("\nMain diagonal elements sum is = %d\n", sum);
+       
+
+    
 	
 	return 0;
 }

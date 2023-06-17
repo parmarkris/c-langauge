@@ -1,19 +1,62 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main()
-{
-    int i, j,k;
-    for(i=1;i<=5;i++)
-    {
-    		for(k=1;k<i;k++){
-			printf(" ");
-		}
-        for(j=5;j>=i;j--)
-        {
-            printf("%d",j);
+int main(){
+	 
+	 int n,m;
+	 
+	 
+	 printf("enter size of row:");
+	 scanf("%d",&m);
+ 	 printf("enter size of colum:");
+	 scanf("%d",&n);
+	 int i,j;
+	 int a[m][n];
+	 for(i=0;i<m;i++){
+	 	for(j=0;j<n;j++){
+		 
+	 	 printf("enter value[%d][%d]:",i,j);
+	 	scanf("%d",&a[i][j]);
+	 	
+	 }
+}
+	 	 for(i=0;i<m;i++){
+	 	 	
+	 	 for(j=0;j<n;j++){
+	 	 printf("%d",a[i][j]);
+}
+      printf("\n");
+	 }
+     int sum=0, H=0;
+      for (i = 0; i < m; i++) {
+             
+           for(j=0 ; j<n ; j++){
+		   
+             
+			 
+            if (i==j){
+			
+            sum += a[i][i];
+            
+            
         }
-        printf("\n");
+	   
+	    if(i + j == 2){
+			 	
+			 	
+			 	H += a[i][j];
+			 	
+			 }      
+            
+        
+}
     }
-
-    return 0;
+        
+        
+        int B=0;
+        
+         B = sum + H;
+         
+         printf("%d",B);
+	
+	return 0;
 }

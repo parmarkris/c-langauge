@@ -1,58 +1,49 @@
-#include<stdio.h>    
-     
-int main()    
-{    
-    int n , i , m , j  ;
-    
-    printf("Enter size of rows: ");
-    scanf("%d",&m);
-    
-    
-    printf("Enter size of column: ");
-    scanf("%d",&n);
-    
-    int a[m][n];
-	for(i=0 ; i<m ; i++) {
-		
-		for(j=0 ; j<n ; j++){
-		
-		
-		
-		printf("Enter elements of arry[%d][%d] : ",i,j);
-		
-		scanf("%d",&a[i][j]);
-		
-	}
+#include<stdio.h>
+
+int main(){
+	 
+	 int n,m;
+	 printf("enter size of row:");
+	 scanf("%d",&m);
+ 	 printf("enter size of colum:");
+	 scanf("%d",&n);
+	 int i,j;
+	 int a[m][n];
+	 for(i=0;i<m;i++){
+	 	for(j=0;j<n;j++){
+		 
+	 	 printf("enter value[%d][%d]:",i,j);
+	 	scanf("%d",&a[i][j]);
+	 	
+	 }
 }
-		for(i=0 ; i<m ; i++){
-			
-			for(j=0 ; j<n ; j++){
-					
-		    	printf("%d",a[i][j]);
-		   }
-		   printf("\n");
-	}
-		
-		int sum;
-		
-		 for(i=0 ; i<m ; i++)
+	 	 for(i=0;i<m;i++){
+	 	 	
+	 	 for(j=0;j<n;j++){
+	 	 printf("%d ",a[i][j]);
+}
+      printf("\n");
+	 }
+      
+      
+      
+      
+        for(j = 0; j < n; j++)
     {
         
-        for(j=0 ; j<n ; j++)
+		
+		float sum=0;
+		
+		
+        for(i = 0; i < m; i++)
         {
             sum += a[i][j];
         }
-        printf("The Sum of Column Elements in a Matrix =  %d \n", sum );
+        printf("The Sum of Elements of a column in a Matrix =  %f \n", sum );
     }
-		
-		return 0;
-	}
-		
-	   
-    
-    
-      
-     
-        
-      
 
+     
+
+	
+	return 0;
+}
